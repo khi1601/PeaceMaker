@@ -302,7 +302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158969021}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.65, z: 0}
+  m_LocalPosition: {x: 0, y: 1.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -435,6 +435,8 @@ MonoBehaviour:
   followPos: {fileID: 1760633576}
   player: {fileID: 0}
   bullet: {fileID: 6526248189271952377, guid: 5cf903d489ac460439041a8bdeaa0350, type: 3}
+  bulletPos: {fileID: 158969021}
+  bulletCount: 6
 --- !u!1 &1353649682
 GameObject:
   m_ObjectHideFlags: 0
