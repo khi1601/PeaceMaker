@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MyBox;
 
-public class GameManager : Singleton<GameManager>
+public class GameManager : MyBox.Singleton<GameManager>
 {
     private void Awake()
     {
