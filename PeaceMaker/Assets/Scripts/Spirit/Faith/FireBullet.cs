@@ -7,12 +7,19 @@ public class FireBullet : MonoBehaviour
     [SerializeField]
     private float speed;
     [SerializeField]
-    private float lifeTime = 1.2f;
+    private float lifeTime;
+    [SerializeField]
+    private float damage;
     private float curTime;
+    public GameObject target;
+    public float rotationSpeed = 30.0f;
+    private Rigidbody2D rigid;
     // Start is called before the first frame update
     void Start()
     {
         curTime = 0;
+        target = GameObject.FindWithTag("Player");
+        rigid = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -22,6 +29,24 @@ public class FireBullet : MonoBehaviour
         if (curTime > lifeTime)
         {
             Destroy(gameObject);
+        }
+        
+    }
+    private void FixedUpdate()
+    {
+        if (target == null)
+            return;
+        Vector2 dir = (Vector2)target.transform.position - rigid.position;
+        dir.Normalize();
+        float rotateAmount=Vector3.Cross(dir, transform.up).z;
+        rigid.angularVelocity = -rotateAmount*rotationSpeed;
+        rigid.velocity = transform.up * speed;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject==target)
+        {
+            //데미지 처리
         }
     }
 }
