@@ -32,6 +32,7 @@ public abstract class Player : MonoBehaviour
     public LayerMask islayer;
 
     protected bool isAttack;
+    public Vector3 flipMove;
     // Start is called before the first frame update
     protected void Start()
     {
@@ -49,7 +50,7 @@ public abstract class Player : MonoBehaviour
         else if (isAttack)
             return;
         
-        Vector3 flipMove = Vector3.zero;
+        flipMove = Vector3.zero;
         if (Input.GetAxisRaw("Horizontal") < 0)
         {
             flipMove = Vector3.left;
