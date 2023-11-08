@@ -55,7 +55,7 @@ public class TalkManager:Singleton<TalkManager>
         }
         isnowTalking = false;
         isAction = false;
-        //talkPanel.SetActive(isAction) ;
+        talkPanel.SetActive(isAction) ;
     }
 
     void ChangeSprite()

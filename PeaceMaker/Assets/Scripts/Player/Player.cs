@@ -73,6 +73,20 @@ public abstract class Player : MonoBehaviour
     }
     protected void Jump()
     {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            if(DrawRay.scanObj!=null)
+            {
+                TalkManager.Instance.Action(DrawRay.scanObj);
+                return;
+            }
+            else if((isground || Physics2D.OverlapCircle(transform.position, testCognizeSideGround, islayer)))
+            {
+                rigid.velocity = Vector2.up * jumpPower;
+                isground = false;
+            }
+        }
+        /*
         if ((isground || Physics2D.OverlapCircle(transform.position, testCognizeSideGround, islayer)) && Input.GetKeyDown(KeyCode.Space))
         {
             rigid.velocity = Vector2.up * jumpPower;
@@ -80,6 +94,7 @@ public abstract class Player : MonoBehaviour
             isground = false;
             //fixedJump = true;
         }
+        */
     }
     protected void GroundCheck()
     {
