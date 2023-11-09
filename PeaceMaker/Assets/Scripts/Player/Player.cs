@@ -32,6 +32,7 @@ public abstract class Player : MonoBehaviour
     public LayerMask islayer;
 
     protected bool isAttack;
+    public Vector3 flipMove;
     // Start is called before the first frame update
     protected void Start()
     {
@@ -49,7 +50,7 @@ public abstract class Player : MonoBehaviour
         else if (isAttack)
             return;
         
-        Vector3 flipMove = Vector3.zero;
+        flipMove = Vector3.zero;
         if (Input.GetAxisRaw("Horizontal") < 0)
         {
             flipMove = Vector3.left;
@@ -72,6 +73,20 @@ public abstract class Player : MonoBehaviour
     }
     protected void Jump()
     {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            if(DrawRay.scanObj!=null && !TalkManager.Instance.isnowTalking)
+            {
+                TalkManager.Instance.Action(DrawRay.scanObj);
+                return;
+            }
+            else if((isground || Physics2D.OverlapCircle(transform.position, testCognizeSideGround, islayer)))
+            {
+                rigid.velocity = Vector2.up * jumpPower;
+                isground = false;
+            }
+        }
+        /*
         if ((isground || Physics2D.OverlapCircle(transform.position, testCognizeSideGround, islayer)) && Input.GetKeyDown(KeyCode.Space))
         {
             rigid.velocity = Vector2.up * jumpPower;
@@ -79,6 +94,7 @@ public abstract class Player : MonoBehaviour
             isground = false;
             //fixedJump = true;
         }
+        */
     }
     protected void GroundCheck()
     {

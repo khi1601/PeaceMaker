@@ -1,0 +1,9 @@
+﻿Quest ID,Talker ID,Talker Name,Talk ID,Contexts,Sprite Name,Sound,MEMO
+0,1000,Erica,1000,Erica기본멘트중,Erica0,,Erica기본멘트
+,1000,Erica,,Erica기본멘트중입니다,Erica1,,
+end,,,end,,,,
+10,1000,Erica,1010,어쩌다 이지경까지 되어버린 걸까,Erica0,,"Erica, Pace 대화"
+10,2000,Pace,,아무도 이렇게 될 지 몰랐을 거야,Pace0,,
+,1000,Erica,,지금이라도 늦지 않았겠지?,Erica1,,
+,2000,Pace,,최선을 다 해 볼 수 밖에,Pace1,,
+end,,,end,,,,
