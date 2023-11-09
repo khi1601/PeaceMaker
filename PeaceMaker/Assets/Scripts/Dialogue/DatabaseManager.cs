@@ -2,17 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DatabaseManager : MonoBehaviour
+public class DatabaseManager : Singleton<DatabaseManager>
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    string csv_FileName;
+
+    public Dictionary<int, Dialogue> QuestDic = new();
+
+    public static bool isFinish = false;
+
+    public override void Awake()
     {
-        
+        base.Awake();
+        if (!isFinish )
+        {
+            gameObject.GetComponent<DialogueParser>().Parse(csv_FileName);
+            isFinish = true;
+            if(isFinish ) { Debug.Log("ÆÄ½Ì ¿Ï·á"); }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public Dialogue GetDialogue(int _talkId)
     {
-        
+        if( QuestDic.ContainsKey( _talkId ) ) { return QuestDic[ _talkId ]; } else { return null; }
     }
 }

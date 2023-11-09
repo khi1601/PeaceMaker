@@ -605,6 +605,7 @@ GameObject:
   - component: {fileID: 520640520}
   - component: {fileID: 520640519}
   - component: {fileID: 520640518}
+  - component: {fileID: 520640521}
   m_Layer: 7
   m_Name: Triangle
   m_TagString: Untagged
@@ -707,6 +708,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &520640521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520640517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e74e28a888d5b46979eb31cfa6d167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 1000
 --- !u!1 &586003668
 GameObject:
   m_ObjectHideFlags: 3
@@ -1340,7 +1354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648881439}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0000150728465, y: 0.07469988, z: -10}
+  m_LocalPosition: {x: 0.0000015497245, y: 0.07469988, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1806,6 +1820,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2079495689}
   - component: {fileID: 2079495688}
+  - component: {fileID: 2079495691}
+  - component: {fileID: 2079495690}
   m_Layer: 0
   m_Name: TalkManager
   m_TagString: Untagged
@@ -1829,7 +1845,8 @@ MonoBehaviour:
   portraitImg: {fileID: 130307857}
   talkNameText: {fileID: 225167943}
   talkText: {fileID: 1838188427}
-  textSpeed: 0.02
+  textSpeed: 0.05
+  isnowTalking: 0
 --- !u!4 &2079495689
 Transform:
   m_ObjectHideFlags: 0
@@ -1846,6 +1863,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2079495690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079495687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7eb9308d409867a4bbb9178b26056936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2079495691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079495687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b905bbd856854994796e1282a04acd66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  csv_FileName: test
 --- !u!1 &2097763044
 GameObject:
   m_ObjectHideFlags: 0

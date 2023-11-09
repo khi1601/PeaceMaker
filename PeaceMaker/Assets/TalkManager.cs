@@ -21,9 +21,10 @@ public class TalkManager:Singleton<TalkManager>
 
     private GameObject scanObj;
     private bool isAction;
-    private bool isnowTalking;
+    public bool isnowTalking;
 
-
+    int contextCnt = 0;
+    Dialogue dialogues;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,21 +33,40 @@ public class TalkManager:Singleton<TalkManager>
 
     public void Action(GameObject _scanObj)
     {
-        scanObj = _scanObj;
         Debug.Log("talkmanager action 실행");
-        Talk(scanObj.name + "이다!");
-        isAction = true;
+        scanObj = _scanObj;
+        ObjData objData = scanObj.GetComponent<ObjData>();
+        Dialogue dialogues = DatabaseManager.Instance.GetDialogue(objData.id);
+        
+        Talk(dialogues);
         talkPanel.SetActive(isAction);
 
     }
 
-    void Talk(string _talkText)
+    void Talk(Dialogue p_dialogue)
     {
-        StartCoroutine(TypeLine(_talkText));
+        string talkData = string.Empty;
+        dialogues = p_dialogue;
+        if(contextCnt<p_dialogue.contexts.Length)
+        {
+            talkText.text = string.Empty;
+            talkData = p_dialogue.contexts[contextCnt];
+            talkNameText.text = p_dialogue.name[contextCnt];
+            StartCoroutine(TypeLine(talkData));
+            contextCnt++;
+            isAction = true;
+        }
+        else
+        {
+            isAction = false;
+            contextCnt = 0;
+            return;
+        }
     }
 
     IEnumerator TypeLine(string _talkText)
     {
+        ChangeSprite();
         foreach (char c in _talkText.ToCharArray())
         {
             isnowTalking = true;
@@ -54,19 +74,21 @@ public class TalkManager:Singleton<TalkManager>
             yield return new WaitForSeconds(textSpeed);
         }
         isnowTalking = false;
-        isAction = false;
-        talkPanel.SetActive(isAction) ;
     }
 
     void ChangeSprite()
     {
-        if(portraitImg != null) 
+        if (dialogues.spriteName[contextCnt]!="") 
         {
-            StartCoroutine(SpriteChangeCoroutine(portraitImg));
+            SpriteChange(dialogues.spriteName[contextCnt]);
         }
     }
-    IEnumerator SpriteChangeCoroutine(Image _portraitImg)
+    public void SpriteChange(string p_spriteName)
     {
-        yield return new WaitForSeconds(3.0f);
+        Image thisImg = portraitImg.GetComponent<Image>();
+
+        Sprite t_sprite = Resources.Load("Portraits/" + p_spriteName, typeof(Sprite)) as Sprite;
+        thisImg.sprite = t_sprite;
+        
     }
 }
