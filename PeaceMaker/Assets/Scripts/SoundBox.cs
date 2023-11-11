@@ -84,7 +84,11 @@ public class SoundBox : MonoBehaviour
                     audioSource.loop = true;
                 }
             }
-            else if (sound_Members.name.Contains("Eff"))
+            //else if (sound_Members.name.Contains("Eff"))
+            //{
+            //    flag = true;
+            //}
+            else if (sound_Members.type==SoundType.SFX)
             {
                 flag = true;
             }
