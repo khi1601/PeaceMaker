@@ -21,7 +21,7 @@ public class TalkManager:Singleton<TalkManager>
 
     private GameObject scanObj;
     private bool isAction;
-    public bool isnowTalking;
+    public bool isnowTalking = false;
 
     int contextCnt = 0;
     Dialogue dialogues;
@@ -42,7 +42,15 @@ public class TalkManager:Singleton<TalkManager>
         talkPanel.SetActive(isAction);
 
     }
+    public void skipTalk()
+    {
+        Debug.Log("skip ½ÇÇà");
 
+        string talkData = string.Empty;
+        talkText.text = string.Empty;
+        talkData = dialogues.contexts[contextCnt];
+        isnowTalking = false ;
+    }
     void Talk(Dialogue p_dialogue)
     {
         string talkData = string.Empty;
@@ -52,9 +60,12 @@ public class TalkManager:Singleton<TalkManager>
             talkText.text = string.Empty;
             talkData = p_dialogue.contexts[contextCnt];
             talkNameText.text = p_dialogue.name[contextCnt];
+            
             StartCoroutine(TypeLine(talkData));
             contextCnt++;
             isAction = true;
+            return;
+            
         }
         else
         {

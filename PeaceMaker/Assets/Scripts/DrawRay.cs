@@ -30,7 +30,13 @@ public class DrawRay : MonoBehaviour
         if (rayHit.collider != null)
         {
             scanObj = rayHit.collider.gameObject; //raycast된 오브젝트를 변수로 저장하여 활용
-            //TalkManager.Instance.Action(scanObj);
+            ObjData objData = scanObj.GetComponent<ObjData>();
+
+            if (!TalkManager.Instance.isnowTalking && objData.isFirstTalking)
+            {
+                TalkManager.Instance.Action(scanObj);
+                objData.isFirstTalking = false;
+            }
         }
         else
             scanObj = null;

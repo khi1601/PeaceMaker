@@ -75,8 +75,13 @@ public abstract class Player : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            if(DrawRay.scanObj!=null && !TalkManager.Instance.isnowTalking)
+            if(DrawRay.scanObj!=null)
             {
+                /*if(TalkManager.Instance.isnowTalking)
+                {
+                    TalkManager.Instance.skipTalk();
+                    return;
+                }*/
                 TalkManager.Instance.Action(DrawRay.scanObj);
                 return;
             }
