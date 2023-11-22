@@ -75,12 +75,7 @@ public abstract class Player : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            if(DrawRay.scanObj!=null && !TalkManager.Instance.isnowTalking)
-            {
-                TalkManager.Instance.Action(DrawRay.scanObj);
-                return;
-            }
-            else if((isground || Physics2D.OverlapCircle(transform.position, testCognizeSideGround, islayer)))
+            if((isground || Physics2D.OverlapCircle(transform.position, testCognizeSideGround, islayer)))
             {
                 rigid.velocity = Vector2.up * jumpPower;
                 isground = false;
