@@ -21,19 +21,43 @@ public class TalkManager:Singleton<TalkManager>
 
     private GameObject scanObj;
     private bool isAction;
-    public bool isnowTalking;
+    public bool isnowTalking = false;
 
     int contextCnt = 0;
     Dialogue dialogues;
+
+    private Coroutine co = null;
+
     // Start is called before the first frame update
     void Start()
     {
         talkText.text = string.Empty;
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (isnowTalking)
+            {
+                StopCoroutine(co);
+                string talkData = string.Empty;
+                talkData = dialogues.contexts[contextCnt - 1];
+                talkText.text = string.Empty;
+                talkText.text = talkData;
+                isnowTalking = false; co = null;
+
+            }
+            else if (!isnowTalking && DrawRay.scanObj != null)
+            {
+                TalkManager.Instance.Action(DrawRay.scanObj);
+            }
+        }
+
+    }
 
     public void Action(GameObject _scanObj)
     {
-        Debug.Log("talkmanager action 실행");
+        //Debug.Log("talkmanager action 실행");
         scanObj = _scanObj;
         ObjData objData = scanObj.GetComponent<ObjData>();
         Dialogue dialogues = DatabaseManager.Instance.GetDialogue(objData.id);
@@ -52,7 +76,7 @@ public class TalkManager:Singleton<TalkManager>
             talkText.text = string.Empty;
             talkData = p_dialogue.contexts[contextCnt];
             talkNameText.text = p_dialogue.name[contextCnt];
-            StartCoroutine(TypeLine(talkData));
+            co = StartCoroutine(TypeLine(talkData));
             contextCnt++;
             isAction = true;
         }
@@ -60,6 +84,7 @@ public class TalkManager:Singleton<TalkManager>
         {
             isAction = false;
             contextCnt = 0;
+            isnowTalking = false;
             return;
         }
     }
