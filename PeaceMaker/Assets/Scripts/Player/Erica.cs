@@ -21,19 +21,20 @@ public class Erica : Player
         Movement();
         GroundCheck();
         Attack();
+        Sit();
     }
     void Attack()
     {
         if (Input.GetKeyDown(KeyCode.D))
         {
             isAttack = true;
-            //ani.SetBool("isAttack", true);
+            ani.SetBool("isAttack", true);
         }
     }
     void FinishAttack()
     {
         isAttack = false;
-        //ani.SetBool("isAttack", false);
+        ani.SetBool("isAttack", false);
     }
     void LaunchMissile()
     {
@@ -48,6 +49,14 @@ public class Erica : Player
             //bulletobj.GetComponent<PenguinMissile>().Direction = 1;
             //bullet.transform.eulerAngles = new Vector3(0, 0, 0);
         }
+    }
+    void PlayerWalk1Sound()
+    {
+        SoundBox.instance.PlaySFX("PlayerWalk1");
+    }
+    void PlayerWalk2Sound()
+    {
+        SoundBox.instance.PlaySFX("PlayerWalk2");
     }
 }
 

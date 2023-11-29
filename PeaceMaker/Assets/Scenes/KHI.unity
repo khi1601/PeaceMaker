@@ -979,11 +979,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   common_clips:
-  - name: 
-    audioClip: {fileID: 0}
+  - name: PlayerWalk1
+    audioClip: {fileID: 8300000, guid: a0f0e2e7ec04db94d9bc0de9f71c8438, type: 3}
     type: 0
-  - name: 
-    audioClip: {fileID: 0}
+  - name: PlayerWalk2
+    audioClip: {fileID: 8300000, guid: c41f1d20e179ccf4899e348fa14db6c9, type: 3}
     type: 0
   - name: 
     audioClip: {fileID: 0}

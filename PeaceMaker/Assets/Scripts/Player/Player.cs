@@ -32,6 +32,7 @@ public abstract class Player : MonoBehaviour
     public LayerMask islayer;
 
     protected bool isAttack;
+    protected bool isSit;
     public Vector3 flipMove;
     // Start is called before the first frame update
     protected void Start()
@@ -47,7 +48,7 @@ public abstract class Player : MonoBehaviour
         {
 
         }
-        else if (isAttack)
+        else if (isAttack||isSit)
             return;
         
         flipMove = Vector3.zero;
@@ -55,18 +56,18 @@ public abstract class Player : MonoBehaviour
         {
             flipMove = Vector3.left;
             transform.localScale = new Vector3(-1, 1, 1);
-            //ani.SetBool("isWalk", true);
+            ani.SetBool("isRun", true);
         }
         else if (Input.GetAxisRaw("Horizontal") > 0)
         {
             flipMove = Vector3.right;
             transform.localScale = new Vector3(1, 1, 1);
-           // ani.SetBool("isWalk", true);
+            ani.SetBool("isRun", true);
         }
         else
         {
             flipMove = Vector3.zero;
-            //ani.SetBool("isWalk", false);
+            ani.SetBool("isRun", false);
         }
         transform.position += flipMove * moveSpeed * Time.deltaTime;
 
@@ -81,15 +82,7 @@ public abstract class Player : MonoBehaviour
                 isground = false;
             }
         }
-        /*
-        if ((isground || Physics2D.OverlapCircle(transform.position, testCognizeSideGround, islayer)) && Input.GetKeyDown(KeyCode.Space))
-        {
-            rigid.velocity = Vector2.up * jumpPower;
-            //ani.SetBool("isJump", true);
-            isground = false;
-            //fixedJump = true;
-        }
-        */
+        //ani.SetBool("isJump", true);
     }
     protected void GroundCheck()
     {
@@ -110,6 +103,19 @@ public abstract class Player : MonoBehaviour
         {
             rigid.velocity = new Vector3(rigid.velocity.x, 0, 0);
             //ani.SetBool("isJump", false);
+        }
+    }
+    protected void Sit()
+    {
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            isSit = true;
+            ani.SetBool("isSit", true);
+        }
+        if (Input.GetKeyUp(KeyCode.DownArrow)&&isSit)
+        {
+            isSit = false;
+            ani.SetBool("isSit", false);
         }
     }
 }
