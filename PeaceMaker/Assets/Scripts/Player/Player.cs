@@ -82,11 +82,11 @@ public abstract class Player : MonoBehaviour
                 isground = false;
             }
         }
-        //ani.SetBool("isJump", true);
+        ani.SetBool("isJump", true);
     }
     protected void GroundCheck()
     {
-        //isground = Physics2D.OverlapCircle(transform.position, 0.59f, islayer);
+        isground = Physics2D.OverlapCircle(transform.position, 0.59f, islayer);
         Vector3 rayPos = new Vector3(transform.position.x, transform.position.y - testCognizeBottomGround, transform.position.z);
         RaycastHit2D hit = Physics2D.Raycast(rayPos, new Vector3(0, -1, 0), 0.07f, LayerMask.GetMask("Ground"));
 
@@ -102,7 +102,7 @@ public abstract class Player : MonoBehaviour
         if (isground && rigid.velocity.y <= 0f)
         {
             rigid.velocity = new Vector3(rigid.velocity.x, 0, 0);
-            //ani.SetBool("isJump", false);
+            ani.SetBool("isJump", false);
         }
     }
     protected void Sit()
