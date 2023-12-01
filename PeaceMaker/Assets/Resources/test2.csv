@@ -1,0 +1,9 @@
+﻿Quest ID,Talker ID,Talker Name,Talk ID,Contexts,Sprite Name,Sound,MEMO
+0,1000,Erica,1000,Erica is Talking now,Erica0,,Erica기본멘트
+,1000,Erica,,Erica is Talkinggggg,Erica1,,
+end,,,end,,,,
+10,1000,Erica,1010,hi,Erica0,,"Erica, Pace 대화"
+10,2000,Pace,,wow,Pace0,,
+,1000,Erica,,hoho,Erica1,,
+,2000,Pace,,haha,Pace1,,
+end,,,end,,,,
