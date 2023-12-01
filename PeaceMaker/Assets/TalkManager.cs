@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
+using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.Localization.Tables;
 
 public class TalkManager:Singleton<TalkManager>
 {
@@ -61,12 +65,30 @@ public class TalkManager:Singleton<TalkManager>
         scanObj = _scanObj;
         ObjData objData = scanObj.GetComponent<ObjData>();
         Dialogue dialogues = DatabaseManager.Instance.GetDialogue(objData.id);
-        
+        //getLocale();
         Talk(dialogues);
         talkPanel.SetActive(isAction);
 
     }
 
+    public void getLocale()
+    {
+        Locale curLocale = LocalizationSettings.SelectedLocale;
+        Debug.Log(curLocale);
+    }
+   /* IEnumerator ChangeLocaleRoutine(Locale _locale)
+    {
+        var loadingOperation = LocalizationSettings.StringDatabase.GetTableAsync("MyTable");
+        yield return loadingOperation;
+
+        if(loadingOperation.Status == AsyncOperationStatus.Succeeded)
+        {
+            StringTable table = loadingOperation.Result;
+
+           string talkerName = table.GetEntry(talker.talkerName)?.GetLocalizedString();
+            talkNameText.text=talkerName;
+        }
+    }*/
     void Talk(Dialogue p_dialogue)
     {
         string talkData = string.Empty;

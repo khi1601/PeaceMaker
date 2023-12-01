@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: My Table Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: My Table
+  m_TableCollectionNameGuidString: 585836a2d629df64c8f3ee431115a1bd
+  m_Entries:
+  - m_Id: 157846519808
+    m_Key: UI-World
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2625129070592
+    m_Key: UI-Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2699947065344
+    m_Key: UI-Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2855060815872
+    m_Key: UI-Ko
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2907711913984
+    m_Key: UI-Eng
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2963806535680
+    m_Key: UI-Jp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 534079156174848
+    m_Key: Korean
+    m_Metadata:
+      m_Items: []
+  - m_Id: 534290796560384
+    m_Key: English
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3293979130528530458
+  references:
+    version: 2
+    RefIds:
+    - rid: 3293979130528530458
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1701088797732
