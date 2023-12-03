@@ -58,5 +58,9 @@ public class Erica : Player
     {
         SoundBox.instance.PlaySFX("PlayerWalk2");
     }
+    void PlayerShootSound()
+    {
+        SoundBox.instance.PlaySFX("Shoot");
+    }
 }
 

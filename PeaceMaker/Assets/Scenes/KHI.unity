@@ -985,8 +985,8 @@ MonoBehaviour:
   - name: PlayerWalk2
     audioClip: {fileID: 8300000, guid: c41f1d20e179ccf4899e348fa14db6c9, type: 3}
     type: 0
-  - name: 
-    audioClip: {fileID: 0}
+  - name: Shoot
+    audioClip: {fileID: 8300000, guid: a640f460c5c6a0245b60522e78e6a258, type: 3}
     type: 0
   - name: 
     audioClip: {fileID: 0}
