@@ -25,16 +25,18 @@ public class Erica : Player
     }
     void Attack()
     {
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D)&&!isAttack)
         {
             isAttack = true;
-            ani.SetBool("isAttack", true);
+            UpAnim.SetBool("isAttack", true);
+            DownAnim.SetBool("isAttack", true);
         }
     }
     void FinishAttack()
     {
         isAttack = false;
-        ani.SetBool("isAttack", false);
+        UpAnim.SetBool("isAttack", false);
+        DownAnim.SetBool("isAttack", true);
     }
     void LaunchMissile()
     {

@@ -29,9 +29,11 @@ public abstract class Player : MonoBehaviour
     public Rigidbody2D rigid;
     [AutoProperty]
     public Animator ani;
+    public Animator UpAnim;
+    public Animator DownAnim;
     public LayerMask islayer;
 
-    protected bool isAttack;
+    public bool isAttack;
     protected bool isSit;
     public Vector3 flipMove;
     // Start is called before the first frame update
@@ -44,30 +46,33 @@ public abstract class Player : MonoBehaviour
 
     protected void Movement()
     {
-        if (isAttack && !isground)
-        {
-
-        }
-        else if (isAttack||isSit)
-            return;
+        //if (isAttack && !isground)
+        //{
+        //
+        //}
+        //else if (isAttack||isSit)
+        //    return;
         
         flipMove = Vector3.zero;
         if (Input.GetAxisRaw("Horizontal") < 0)
         {
             flipMove = Vector3.left;
             transform.localScale = new Vector3(-1, 1, 1);
-            ani.SetBool("isRun", true);
+            UpAnim.SetBool("isRun", true);
+            DownAnim.SetBool("isRun", true);
         }
         else if (Input.GetAxisRaw("Horizontal") > 0)
         {
             flipMove = Vector3.right;
             transform.localScale = new Vector3(1, 1, 1);
             ani.SetBool("isRun", true);
+            DownAnim.SetBool("isRun", true);
         }
         else
         {
             flipMove = Vector3.zero;
             ani.SetBool("isRun", false);
+            DownAnim.SetBool("isRun", false);
         }
         transform.position += flipMove * moveSpeed * Time.deltaTime;
 
@@ -82,7 +87,8 @@ public abstract class Player : MonoBehaviour
                 isground = false;
             }
         }
-        ani.SetBool("isJump", true);
+        UpAnim.SetBool("isJump", true);
+        DownAnim.SetBool("isJump", true);
     }
     protected void GroundCheck()
     {
@@ -102,7 +108,8 @@ public abstract class Player : MonoBehaviour
         if (isground && rigid.velocity.y <= 0f)
         {
             rigid.velocity = new Vector3(rigid.velocity.x, 0, 0);
-            ani.SetBool("isJump", false);
+            UpAnim.SetBool("isJump", false);
+            DownAnim.SetBool("isJump", false);
         }
     }
     protected void Sit()
@@ -110,12 +117,14 @@ public abstract class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.DownArrow))
         {
             isSit = true;
-            ani.SetBool("isSit", true);
+            UpAnim.SetBool("isSit", true);
+            DownAnim.SetBool("isSit", true);
         }
         if (Input.GetKeyUp(KeyCode.DownArrow)&&isSit)
         {
             isSit = false;
             ani.SetBool("isSit", false);
+            DownAnim.SetBool("isSit", false);
         }
     }
 }
