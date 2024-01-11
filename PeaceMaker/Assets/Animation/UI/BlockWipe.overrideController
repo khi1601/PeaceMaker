@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BlockWipe
+  m_Controller: {fileID: 9100000, guid: 856118ba177395e43a0d66b02547e978, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ec02fba60c83c174286696ac3bcd5760, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 53777bff7e467e44cb36cabe515fbc99, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c86dbc7cf1abb2842a5f684ccf9387b7, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9da4c59538c48034794bd0ae6010dc0a, type: 2}
