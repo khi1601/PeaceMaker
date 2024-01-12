@@ -19,7 +19,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadNextScene()
     {
-        StartCoroutine(LoadScene(SceneManager.GetActiveScene().buildIndex + 1));
+        StartCoroutine(LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
     IEnumerator LoadScene(int sceneIndex)
@@ -29,5 +29,21 @@ public class SceneLoader : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
 
         SceneManager.LoadScene(sceneIndex);
+    }
+    IEnumerator LoadSceneAsync(int sceneIndex)
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneIndex);
+        asyncLoad.allowSceneActivation = false; //로딩화면다끝나고씬전환되게 
+        transition.SetTrigger("Start");
+        while (!asyncLoad.isDone)
+        {
+            if(asyncLoad.progress>=0.9f)
+            {
+                yield return new WaitForSeconds(transitionTime);
+                asyncLoad.allowSceneActivation = true; 
+            }
+            yield return null;
+        }
+
     }
 }
