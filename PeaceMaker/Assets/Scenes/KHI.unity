@@ -1650,11 +1650,11 @@ MonoBehaviour:
   - name: Shoot
     audioClip: {fileID: 8300000, guid: a640f460c5c6a0245b60522e78e6a258, type: 3}
     type: 0
-  - name: 
-    audioClip: {fileID: 0}
+  - name: AW_Attack
+    audioClip: {fileID: 8300000, guid: c892fdb723f4efd4b8abe3b97a2141be, type: 3}
     type: 0
-  - name: 
-    audioClip: {fileID: 0}
+  - name: AW_Die
+    audioClip: {fileID: 8300000, guid: eb0fc5d8999de244883eacd2fda34788, type: 3}
     type: 0
   - name: 
     audioClip: {fileID: 0}

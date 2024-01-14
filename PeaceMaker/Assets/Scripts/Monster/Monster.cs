@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using MyBox;
 public enum M_Kind
 {
     Normal,
@@ -22,7 +23,9 @@ public enum State
 public abstract class Monster : MonoBehaviour
 {
     protected float defaultmoveSpeed;
+    [AutoProperty]
     public Rigidbody2D rigi;
+    [AutoProperty]
     public Animator ani;
     public bool MonsterDirRight;
     // Start is called before the first frame update
