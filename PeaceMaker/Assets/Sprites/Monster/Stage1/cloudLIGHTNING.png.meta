@@ -145,6 +145,90 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55a747f531e4dc45b9457d9eddcf8c7
+      internalID: -1552703755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloudLIGHTNING_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2150fa7142af9984c86e0a63c1331736
+      internalID: 1688363438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloudLIGHTNING_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec065081ab1c704fab7b880a2f77475
+      internalID: -810502566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloudLIGHTNING_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126cd948742bf2445a511c7c9895a293
+      internalID: -483224814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloudLIGHTNING_4
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
         width: 32
         height: 32
@@ -155,14 +239,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f63c75de4ce4ad3468ca0233cc771b66
-      internalID: 205278165
+      spriteID: a7d145f0c26482f45850c07a2d1c8fce
+      internalID: 990306933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cloudLIGHTNING_1
+      name: cloudLIGHTNING_5
       rect:
         serializedVersion: 2
         x: 32
@@ -176,50 +260,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60fb4ac91da0b6e449ae768735b9298e
-      internalID: -790934648
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cloudLIGHTNING_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 890d9bd2a17d98d4da7433126ba5af13
-      internalID: -838975331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cloudLIGHTNING_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83229c3d0d188944192b8ada7fb75a31
-      internalID: 2047728338
+      spriteID: 6bb45f8f829c67f40bfa4a824fb5931d
+      internalID: -1445606110
       vertices: []
       indices: 
       edges: []
@@ -235,10 +277,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cloudLIGHTNING_0: 205278165
-      cloudLIGHTNING_1: -790934648
-      cloudLIGHTNING_2: -838975331
-      cloudLIGHTNING_3: 2047728338
+      cloudLIGHTNING_0: -1552703755
+      cloudLIGHTNING_1: 1688363438
+      cloudLIGHTNING_2: -810502566
+      cloudLIGHTNING_3: -483224814
+      cloudLIGHTNING_4: 990306933
+      cloudLIGHTNING_5: -1445606110
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

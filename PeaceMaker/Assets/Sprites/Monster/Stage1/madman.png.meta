@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9443327f0fddd23478e0ee4fea760730
+guid: c585fb6203d4699428199d6d0083eeee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -141,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fireEgg_0
+      name: madman_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
-        width: 72
-        height: 72
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0164f2010c84954d8c087f1abfa17c4
-      internalID: 120686801
+      spriteID: 39caad926e75c594c9dc9492a6bb0dd4
+      internalID: 678450471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_1
+      name: madman_1
       rect:
         serializedVersion: 2
-        x: 72
-        y: 144
-        width: 72
-        height: 72
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc9d1bc70abf813428c0330ce208c87f
-      internalID: -694637083
+      spriteID: 85f3d499acd57cc40aa6e87b92f36b44
+      internalID: 944124043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_2
+      name: madman_2
       rect:
         serializedVersion: 2
-        x: 144
-        y: 144
-        width: 72
-        height: 72
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24a7881ecab84964c8d73841045a8424
-      internalID: -523941622
+      spriteID: 9b822573fe872414db89383e4e6c66a8
+      internalID: -1581773737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_3
+      name: madman_3
       rect:
         serializedVersion: 2
-        x: 216
-        y: 144
-        width: 72
-        height: 72
+        x: 384
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80960a87c3754f8439e9201ea7c9cda9
-      internalID: -2122739951
+      spriteID: 46450f0f98976d04cb00fe9e597217de
+      internalID: -355616492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_4
+      name: madman_4
       rect:
         serializedVersion: 2
-        x: 288
-        y: 144
-        width: 72
-        height: 72
+        x: 512
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 740f142225c2a7e4a82ad36b08fcacd7
-      internalID: -17997133
+      spriteID: 842d7b8ec9d9d944982cb6ee6d6bdd96
+      internalID: 2064704799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_5
+      name: madman_5
       rect:
         serializedVersion: 2
-        x: 360
-        y: 144
-        width: 72
-        height: 72
+        x: 640
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,167 +260,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b2ab14fa0cc442489ebe06a2b2614e1
-      internalID: -763390280
+      spriteID: bda3aeca36abd62499e0af4c131651ad
+      internalID: 1807282144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 72
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d857ebcb279e7844a69d749e9355c6b
-      internalID: 1793936207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireEgg_7
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 72
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cac033d938623ac4f9daa798ec4c8fa2
-      internalID: 1337713906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireEgg_8
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 72
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a591fe14aeed8514ca632b636596ac9c
-      internalID: -1487778702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireEgg_9
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 72
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27a0f5668e2f34c47821f9821266c829
-      internalID: -816878920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireEgg_10
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 72
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1e6e52a38eeb0b4e837fd0cdf90ef82
-      internalID: 1509729607
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireEgg_11
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 72
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72caa02607f6faa4699583019e42f002
-      internalID: -375543124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireEgg_12
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 72
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e66942bab44bac41b81fbcf15d1ca0d
-      internalID: -1132205351
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireEgg_13
+      name: madman_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 72
-        height: 72
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d141ba29f3140b4aad395297c76d122
-      internalID: -602544196
+      spriteID: d0841d6271ae97045b0afb4e2a707cfd
+      internalID: -1373409707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_14
+      name: madman_7
       rect:
         serializedVersion: 2
-        x: 72
-        y: 0
-        width: 72
-        height: 72
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,20 +302,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c390eee3f1bf6324e8b3d18374872ffc
-      internalID: -1888874654
+      spriteID: bde8dc1d37ff8bb468e94452b5867054
+      internalID: 1326040681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_15
+      name: madman_8
       rect:
         serializedVersion: 2
-        x: 144
-        y: 0
-        width: 72
-        height: 72
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,20 +323,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a44fe84fa8788e438808064efa89464
-      internalID: 1591160421
+      spriteID: 6a59e036610b700409c1c57a0e6fcfbe
+      internalID: -953652216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_16
+      name: madman_9
       rect:
         serializedVersion: 2
-        x: 216
-        y: 0
-        width: 72
-        height: 72
+        x: 384
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,20 +344,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0408c28c49ad2a44b3b0087b62fa7b2
-      internalID: 210619232
+      spriteID: 58e3b843f7f19584aaa895b28a30a32d
+      internalID: -327624268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_17
+      name: madman_10
       rect:
         serializedVersion: 2
-        x: 288
-        y: 0
-        width: 72
-        height: 72
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,20 +365,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e51579b2b6d79c40aef029e5cf954bf
-      internalID: 1481501458
+      spriteID: 89e49d4d143e4bf438be43f38c2369d2
+      internalID: 1670758054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_18
+      name: madman_11
       rect:
         serializedVersion: 2
-        x: 360
-        y: 0
-        width: 72
-        height: 72
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,20 +386,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e002f156c692754384fa004301022ae
-      internalID: 1290265947
+      spriteID: 232f4706b47494b49a5ad82d30487a7e
+      internalID: -1830263913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_19
+      name: madman_12
       rect:
         serializedVersion: 2
-        x: 432
-        y: 0
-        width: 72
-        height: 72
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,20 +407,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbb56aa23b1b44948b0ed95ae30ff728
-      internalID: 1344639084
+      spriteID: 30dfedb503b074046b8e7f1082dec739
+      internalID: -806748591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_20
+      name: madman_13
       rect:
         serializedVersion: 2
-        x: 504
-        y: 0
-        width: 72
-        height: 72
+        x: 384
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,20 +428,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b98023cf98daa642a95c4b888a8638e
-      internalID: 1963316938
+      spriteID: 7b5491e95cdd8384597f93cfa91f86b6
+      internalID: 1757722333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_21
+      name: madman_14
       rect:
         serializedVersion: 2
-        x: 576
-        y: 0
-        width: 72
-        height: 72
+        x: 512
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,20 +449,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 562d8a7f8c6fd0b4b9daf68feb871b19
-      internalID: -205761720
+      spriteID: acb066bf5c4131c4ebc2cba8e22410db
+      internalID: -181386737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_22
+      name: madman_15
       rect:
         serializedVersion: 2
-        x: 648
-        y: 0
-        width: 72
-        height: 72
+        x: 640
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,20 +470,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a46d2ea4977ee074c9a6d5ff14925301
-      internalID: -375370042
+      spriteID: b13cd9e5cd7dfb842978734e93f057d4
+      internalID: 1035732232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_23
+      name: madman_16
       rect:
         serializedVersion: 2
-        x: 720
-        y: 0
-        width: 72
-        height: 72
+        x: 768
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,20 +491,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80a7c35af6947964bb2920c24bc90815
-      internalID: -539495596
+      spriteID: eb347c8b2cff0e840941153a53a2a765
+      internalID: -26041471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_24
+      name: madman_17
       rect:
         serializedVersion: 2
-        x: 792
-        y: 0
-        width: 72
-        height: 72
+        x: 896
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,20 +512,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 246d9997908fe614982604e9374ee0a8
-      internalID: 1545278037
+      spriteID: 181d60cf85ce2744996d21acaf854a9a
+      internalID: -1375855278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_25
+      name: madman_18
       rect:
         serializedVersion: 2
-        x: 864
-        y: 0
-        width: 72
-        height: 72
+        x: 1024
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,83 +533,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b05fcc5930091949a5e47098091c444
-      internalID: -606937783
+      spriteID: 64614c1a4d5aff0489d42d537c13d3e2
+      internalID: -818976955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireEgg_26
-      rect:
-        serializedVersion: 2
-        x: 936
-        y: 0
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d3b6cd53c45d4d48934cd2a53ab1ec2
-      internalID: -1327250478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireEgg_27
-      rect:
-        serializedVersion: 2
-        x: 1008
-        y: 0
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 058d7bd02f51c0248a6492859ce9984c
-      internalID: 1817079907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireEgg_28
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 0
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 929b1d74a7892b14c8343d3f984daf51
-      internalID: -278874774
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireEgg_29
+      name: madman_19
       rect:
         serializedVersion: 2
         x: 1152
-        y: 0
-        width: 72
-        height: 72
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -764,8 +554,218 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d512a360eae7537499a1b6d6d034ca3d
-      internalID: -782950393
+      spriteID: 986ec6ecc2857ff499da7b4ced4e0532
+      internalID: 1270286898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: madman_20
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a793c8001ab4fcc438902c3dcc9735c0
+      internalID: 925714728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: madman_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71309a2f73b7f0e47a115c07c56e4ea9
+      internalID: -1697808109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: madman_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25252bc073e44947abda19c6840c43b
+      internalID: 1254549142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: madman_23
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f82e325b0929194ca5c7672ab19c70e
+      internalID: -452603696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: madman_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7121af687b3469745832bc42b265a325
+      internalID: -1580411522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: madman_25
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348a9e1bcd87dac4796e4a89a40c144f
+      internalID: 20547458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: madman_26
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5407576d82489249a5559ace60c9a64
+      internalID: -1953296691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: madman_27
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d209be0b91db74a9b66b0669b6a6bd
+      internalID: 609314167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: madman_28
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f416be1e001f5164698bd0d64cbb741f
+      internalID: 297145529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: madman_29
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8a8da6f2b61694da3afc98ee4cc4a8
+      internalID: 1666165006
       vertices: []
       indices: 
       edges: []
@@ -781,36 +781,36 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fireEgg_0: 120686801
-      fireEgg_1: -694637083
-      fireEgg_10: 1509729607
-      fireEgg_11: -375543124
-      fireEgg_12: -1132205351
-      fireEgg_13: -602544196
-      fireEgg_14: -1888874654
-      fireEgg_15: 1591160421
-      fireEgg_16: 210619232
-      fireEgg_17: 1481501458
-      fireEgg_18: 1290265947
-      fireEgg_19: 1344639084
-      fireEgg_2: -523941622
-      fireEgg_20: 1963316938
-      fireEgg_21: -205761720
-      fireEgg_22: -375370042
-      fireEgg_23: -539495596
-      fireEgg_24: 1545278037
-      fireEgg_25: -606937783
-      fireEgg_26: -1327250478
-      fireEgg_27: 1817079907
-      fireEgg_28: -278874774
-      fireEgg_29: -782950393
-      fireEgg_3: -2122739951
-      fireEgg_4: -17997133
-      fireEgg_5: -763390280
-      fireEgg_6: 1793936207
-      fireEgg_7: 1337713906
-      fireEgg_8: -1487778702
-      fireEgg_9: -816878920
+      madman_0: 678450471
+      madman_1: 944124043
+      madman_10: 1670758054
+      madman_11: -1830263913
+      madman_12: -806748591
+      madman_13: 1757722333
+      madman_14: -181386737
+      madman_15: 1035732232
+      madman_16: -26041471
+      madman_17: -1375855278
+      madman_18: -818976955
+      madman_19: 1270286898
+      madman_2: -1581773737
+      madman_20: 925714728
+      madman_21: -1697808109
+      madman_22: 1254549142
+      madman_23: -452603696
+      madman_24: -1580411522
+      madman_25: 20547458
+      madman_26: -1953296691
+      madman_27: 609314167
+      madman_28: 297145529
+      madman_29: 1666165006
+      madman_3: -355616492
+      madman_4: 2064704799
+      madman_5: 1807282144
+      madman_6: -1373409707
+      madman_7: 1326040681
+      madman_8: -953652216
+      madman_9: -327624268
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
