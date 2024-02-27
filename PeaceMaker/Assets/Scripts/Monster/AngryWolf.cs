@@ -34,7 +34,7 @@ public class AngryWolf : Monster
     IEnumerator Idle()
     {
         yield return null;
-        if (Vector2.Distance(transform.position, player.position) <= 50.0f)
+        if (Vector2.Distance(transform.position, player.position) <= 30.0f)
             currentState = State.Follow;
     }
     IEnumerator Follow()
@@ -43,7 +43,7 @@ public class AngryWolf : Monster
         {
             yield return null;
             CheckDirection();
-            if (CanDash&& Vector2.Distance(transform.position, player.position) < 10.0f)
+            if (CanDash&& Vector2.Distance(transform.position, player.position) < 15.0f)
             {
                 currentState = State.Dash;
                 break;
@@ -54,7 +54,7 @@ public class AngryWolf : Monster
                 transform.position = Vector2.MoveTowards(transform.position, new Vector2(player.position.x,transform.position.y), moveSpeed * Time.deltaTime);
             }
 
-            if (Vector2.Distance(transform.position, player.position) > 50.0f)
+            if (Vector2.Distance(transform.position, player.position) > 30.0f)
             {
                 currentState = State.Idle;
                 PlayAnimation("AW_Idle");
@@ -110,9 +110,9 @@ public class AngryWolf : Monster
     public void DashAtk()
     {
         if(MonsterDirRight)
-            rigi.AddForce((Vector2.right) * 10.0f+Vector2.up*3.0f, ForceMode2D.Impulse);
+            rigi.AddForce((Vector2.right) * 25.0f+Vector2.up*3.0f, ForceMode2D.Impulse);
         else
-            rigi.AddForce((Vector2.right) * 10.0f*-1.0f+Vector2.up * 3.0f, ForceMode2D.Impulse);
+            rigi.AddForce((Vector2.right) * 25.0f*-1.0f+Vector2.up * 3.0f, ForceMode2D.Impulse);
 
     }
     public void FinishAttack()
