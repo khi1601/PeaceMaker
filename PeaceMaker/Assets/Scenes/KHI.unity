@@ -803,6 +803,10 @@ MonoBehaviour:
   moveSpeed: 0
   isKnockbacking: 0
   invincible: 0
+  currentState: 0
+  CanDash: 0
+  CheckPlayer: 0
+  isAttack: 0
 --- !u!50 &276640344
 Rigidbody2D:
   serializedVersion: 4
@@ -1123,7 +1127,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &724216090
 Animator:
   serializedVersion: 5
@@ -1359,7 +1363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &854196630
 Rigidbody2D:
   serializedVersion: 4
@@ -1615,7 +1619,7 @@ GameObject:
   - component: {fileID: 977268073}
   - component: {fileID: 977268072}
   - component: {fileID: 977268077}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AngryWolf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1750,7 +1754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977268071}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.61, y: -6, z: 0}
+  m_LocalPosition: {x: 33.67, y: -5.36, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1777,9 +1781,13 @@ MonoBehaviour:
   monsterKind: 0
   Atk: 0
   Defense: 0
-  moveSpeed: 0
+  moveSpeed: 10
   isKnockbacking: 0
   invincible: 0
+  currentState: 0
+  CanDash: 0
+  CheckPlayer: 0
+  isAttack: 0
 --- !u!1 &1108546946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2854,7 +2862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1808686492
 Animator:
   serializedVersion: 5
@@ -3070,7 +3078,7 @@ GameObject:
   - component: {fileID: 1961403340}
   - component: {fileID: 1961403339}
   - component: {fileID: 1961403338}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Erica2
   m_TagString: Player
   m_Icon: {fileID: 0}
