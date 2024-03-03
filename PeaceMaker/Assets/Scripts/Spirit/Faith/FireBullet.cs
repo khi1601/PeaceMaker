@@ -46,7 +46,7 @@ public class FireBullet : MonoBehaviour
     {
         if(collision.gameObject==target)
         {
-            //데미지 처리
+            Destroy(gameObject);
         }
     }
 }

@@ -89,12 +89,7 @@ public class LightningCloud : Monster
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            StopCoroutine(FSM());
-            PlayAnimation("LC_Die");
-            SoundBox.instance.PlaySFX("LC_Die");
-        }
+        
         if(followingMonster==null)
         {
             if(currentState!= State.Patrol)
@@ -110,6 +105,12 @@ public class LightningCloud : Monster
             StartCoroutine(FSM());
             followingMonster =hit.collider.gameObject;
             isFollow = true;
+        }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            StopCoroutine(FSM());
+            PlayAnimation("LC_Die");
+            SoundBox.instance.PlaySFX("LC_Die");
         }
     }
     public void CanAttackTrue()
