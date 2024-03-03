@@ -18,8 +18,9 @@ public class FireBullet : MonoBehaviour
     void Start()
     {
         curTime = 0;
-        target = GameObject.FindWithTag("Player");
+        //target = GameObject.FindWithTag("Player");
         rigid = GetComponent<Rigidbody2D>();
+        SoundBox.instance.PlaySFX("Faith_Missile");
     }
 
     // Update is called once per frame

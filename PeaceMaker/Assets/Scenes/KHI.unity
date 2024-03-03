@@ -1226,7 +1226,7 @@ GameObject:
   - component: {fileID: 912264278}
   m_Layer: 0
   m_Name: LightningCloud
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1367,7 +1367,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.35270357, y: 0.03527063}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1378,7 +1378,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.875, y: 5}
+  m_Size: {x: 2.5720296, y: 1.6140543}
   m_EdgeRadius: 0
 --- !u!50 &912264279
 Rigidbody2D:
@@ -1872,11 +1872,11 @@ MonoBehaviour:
   - name: LC_Die
     audioClip: {fileID: 8300000, guid: 800be9b3e733b2c4f83c4618a47c5d0e, type: 3}
     type: 0
-  - name: 
-    audioClip: {fileID: 0}
+  - name: Faith_Missile
+    audioClip: {fileID: 8300000, guid: bf80c0d461e20d2449638d5702732d5c, type: 3}
     type: 0
-  - name: 
-    audioClip: {fileID: 0}
+  - name: Faith_Launch
+    audioClip: {fileID: 8300000, guid: ce72b0dcb843b904fa66353f4bb9e1e6, type: 3}
     type: 0
   - name: 
     audioClip: {fileID: 0}

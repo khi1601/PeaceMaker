@@ -35,7 +35,7 @@ public class Thunder : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Monster"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("MonsterPass"))
         {
             Debug.Log("몬스터 히트");
             animator.Play("Thunder_Disappear");
