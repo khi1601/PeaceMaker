@@ -8,7 +8,6 @@ public class AngryWolf : Monster
     // Start is called before the first frame update
     private Transform player;
     private SpriteRenderer sr;
-    private float moveTimer;
     public bool CanDash;
     public bool isAttack;
     Vector2 nowplayertrans;
@@ -16,7 +15,6 @@ public class AngryWolf : Monster
     void Start()
     {
         base.Start();
-        moveTimer = 0f;
         CanDash = true;
         sr = GetComponent<SpriteRenderer>();
 
