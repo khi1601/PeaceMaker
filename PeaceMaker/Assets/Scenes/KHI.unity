@@ -1866,11 +1866,11 @@ MonoBehaviour:
   - name: AW_Die
     audioClip: {fileID: 8300000, guid: eb0fc5d8999de244883eacd2fda34788, type: 3}
     type: 0
-  - name: 
-    audioClip: {fileID: 0}
+  - name: LC_Attack
+    audioClip: {fileID: 8300000, guid: e563f5b6d803b4e438cbdf93c9f9821f, type: 3}
     type: 0
-  - name: 
-    audioClip: {fileID: 0}
+  - name: LC_Die
+    audioClip: {fileID: 8300000, guid: 800be9b3e733b2c4f83c4618a47c5d0e, type: 3}
     type: 0
   - name: 
     audioClip: {fileID: 0}
