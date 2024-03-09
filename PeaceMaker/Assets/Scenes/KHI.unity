@@ -391,6 +391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c575da22366af341b8bb9a044bd5fca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  curMapMonsters: []
 --- !u!4 &29849696
 Transform:
   m_ObjectHideFlags: 0
@@ -1341,6 +1342,7 @@ MonoBehaviour:
   Atk: 0
   Defense: 0
   moveSpeed: 10
+  stageBuff: 0
   isKnockbacking: 0
   invincible: 0
   currentState: 2
@@ -1352,8 +1354,10 @@ MonoBehaviour:
     m_Bits: 512
   followingMonster: {fileID: 0}
   isFollow: 0
+  isFinish: 0
   SpawnThunderPos: {fileID: 1629744973}
   SpawnThunder: {fileID: 3921338255965870345, guid: fce6ef9aa2c6c8045afb67c162eeb61d, type: 3}
+  ableFollow: []
 --- !u!61 &912264278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1575,9 +1579,10 @@ MonoBehaviour:
   curHp: 0
   hp: 0
   monsterKind: 0
-  Atk: 0
+  Atk: 10
   Defense: 0
   moveSpeed: 10
+  stageBuff: 0
   isKnockbacking: 0
   invincible: 0
   currentState: 0

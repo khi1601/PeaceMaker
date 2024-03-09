@@ -78,9 +78,9 @@ public class AngryWolf : Monster
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.U))
         {
-            StopCoroutine(FSM());
+            StopAllCoroutines();
             PlayAnimation("AW_Die");
         }
 
@@ -120,6 +120,8 @@ public class AngryWolf : Monster
     }
     public void Destroy()
     {
+        GameManager.Instance.ReMapMonsters(gameObject);
+
         Destroy(gameObject);
     }
     public override void HandleHP()
@@ -133,6 +135,13 @@ public class AngryWolf : Monster
     public override void ReturntoIdle()
     {
         //currentState = State.Idle;
+    }
+    public override void ActivateStageBuff()
+    {
+        stageBuff = true;
+        moveSpeed *= 1.2f;
+        curHp*=2.0f;
+        Atk *= 2.0f;
     }
     void AW_AttackSound()
     {

@@ -39,6 +39,7 @@ public abstract class Monster : MonoBehaviour
     protected float Defense;
     [SerializeField]
     protected float moveSpeed;
+    public bool stageBuff;
 
     public bool isKnockbacking;
     public bool invincible;
@@ -57,6 +58,7 @@ public abstract class Monster : MonoBehaviour
 
     public abstract void HandleHP();
     public abstract void StopVelocity();
+    public abstract void ActivateStageBuff();
     protected void FlipMonster()
     {
         MonsterDirRight = !MonsterDirRight;

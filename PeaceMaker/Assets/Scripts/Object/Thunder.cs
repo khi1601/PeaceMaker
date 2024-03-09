@@ -38,6 +38,7 @@ public class Thunder : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("MonsterPass"))
         {
             Debug.Log("몬스터 히트");
+            collision.gameObject.GetComponent<Monster>().ActivateStageBuff();
             animator.Play("Thunder_Disappear");
         }
         if (collision.gameObject.CompareTag("Player"))
