@@ -151,4 +151,8 @@ public class AngryWolf : Monster
     {
         SoundBox.instance.PlaySFX("AW_Die");
     }
+    public override void TakeDamage(float damage)
+    {
+
+    }
 }

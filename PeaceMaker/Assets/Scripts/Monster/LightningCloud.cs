@@ -210,4 +210,9 @@ public class LightningCloud : Monster
     {
         SoundBox.instance.PlaySFX("LC_Die");
     }
+
+    public override void TakeDamage(float damage)
+    {
+        throw new System.NotImplementedException();
+    }
 }

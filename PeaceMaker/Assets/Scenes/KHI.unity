@@ -2027,8 +2027,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8719994372400502721, guid: c211dc464268ef24a9314a19bb87b718, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8719994372400502781, guid: c211dc464268ef24a9314a19bb87b718, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 5157520860444988084, guid: 15e095bc2b6332d4c83f8a2bde0f8db2, type: 3}
+    - target: {fileID: 8719994372400502781, guid: c211dc464268ef24a9314a19bb87b718, type: 3}
+      propertyPath: bulletEff
+      value: 
+      objectReference: {fileID: 7274216051212837106, guid: a777c574a3144bc41af336eb7dcc3c11, type: 3}
+    - target: {fileID: 8719994372400502781, guid: c211dc464268ef24a9314a19bb87b718, type: 3}
+      propertyPath: bulletPos
+      value: 
+      objectReference: {fileID: 8719994371514740381}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c211dc464268ef24a9314a19bb87b718, type: 3}
+--- !u!4 &8719994371514740381 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8381422437491356106, guid: c211dc464268ef24a9314a19bb87b718, type: 3}
+  m_PrefabInstance: {fileID: 8719994371514740380}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8741917283021769389
 PrefabInstance:
   m_ObjectHideFlags: 0

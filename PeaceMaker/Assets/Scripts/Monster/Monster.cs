@@ -59,6 +59,7 @@ public abstract class Monster : MonoBehaviour
     public abstract void HandleHP();
     public abstract void StopVelocity();
     public abstract void ActivateStageBuff();
+    public abstract void TakeDamage(float damage);
     protected void FlipMonster()
     {
         MonsterDirRight = !MonsterDirRight;
@@ -92,17 +93,17 @@ public abstract class Monster : MonoBehaviour
    
     public void KnockBack(Vector2 pos, float power)
     {
+        StopVelocity();
         StartCoroutine(KnockBacking(pos, power));
     }
     public abstract void ReturntoIdle();
     private IEnumerator KnockBacking(Vector2 pos, float power)
     {
         isKnockbacking = true;
-        for (int i = 0; i <= 9; i++)
-        {
-            rigi.AddForce((pos.normalized) * power, ForceMode2D.Impulse);
-            yield return null;
-        }
+       
+         rigi.AddForce((pos.normalized) * power, ForceMode2D.Impulse);
+         yield return null;
+        
         isKnockbacking = false;
     }
 
