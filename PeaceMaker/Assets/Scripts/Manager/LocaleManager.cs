@@ -21,7 +21,7 @@ public class LocaleManager : Singleton<LocaleManager>
     {
         isChanging = true;
 
-        yield return LocalizationSettings.InitializationOperation;
+        yield return LocalizationSettings.InitializationOperation; //초기화진행
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[_index];
         isChanging = false;
     }

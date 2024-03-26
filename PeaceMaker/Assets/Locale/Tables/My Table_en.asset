@@ -50,6 +50,10 @@ MonoBehaviour:
     m_Localized: English
     m_Metadata:
       m_Items: []
+  - m_Id: 42603076349247488
+    m_Localized: Japanese
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
