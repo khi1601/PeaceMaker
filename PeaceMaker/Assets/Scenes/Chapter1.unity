@@ -3853,7 +3853,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 890690645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.956882, y: -1.9492197, z: -10}
+  m_LocalPosition: {x: -14.987434, y: -1.9491501, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6376,6 +6376,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8719994372400502781, guid: c211dc464268ef24a9314a19bb87b718, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 5157520860444988084, guid: 15e095bc2b6332d4c83f8a2bde0f8db2, type: 3}
+    - target: {fileID: 8719994372400502781, guid: c211dc464268ef24a9314a19bb87b718, type: 3}
+      propertyPath: bulletEff
+      value: 
+      objectReference: {fileID: 7274216051212837106, guid: a777c574a3144bc41af336eb7dcc3c11, type: 3}
+    - target: {fileID: 8719994372400502781, guid: c211dc464268ef24a9314a19bb87b718, type: 3}
+      propertyPath: bulletPos
+      value: 
+      objectReference: {fileID: 1670632216}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c211dc464268ef24a9314a19bb87b718, type: 3}
 --- !u!1 &1283966342 stripped
@@ -8549,6 +8561,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1670632216 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8381422437491356106, guid: c211dc464268ef24a9314a19bb87b718, type: 3}
+  m_PrefabInstance: {fileID: 1283966341}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1682543491
 GameObject:
   m_ObjectHideFlags: 0
@@ -10713,6 +10730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csv_FileName_Kor: test
   csv_FileName_Eng: test2
+  csv_FileName_JP: 
 --- !u!114 &2072189373
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,6 +10,8 @@ public class Thunder : MonoBehaviour
     private float curTime;
     [SerializeField]
     private float moveSpeed;
+    [SerializeField]
+    private float damage;
     private Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -44,6 +46,7 @@ public class Thunder : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("플레이어 히트");
+            collision.gameObject.GetComponent<Player>().TakeDamage(damage);
             animator.Play("Thunder_Disappear");
         }
     }

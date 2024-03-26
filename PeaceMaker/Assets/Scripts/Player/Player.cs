@@ -127,5 +127,6 @@ public abstract class Player : MonoBehaviour
             DownAnim.SetBool("isSit", false);
         }
     }
+    public abstract void TakeDamage(float damage);
 }
 

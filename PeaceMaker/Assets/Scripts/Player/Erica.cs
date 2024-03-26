@@ -64,5 +64,9 @@ public class Erica : Player
     {
         SoundBox.instance.PlaySFX("Shoot");
     }
+    public override void TakeDamage(float damage)
+    {
+        
+    }
 }
 
