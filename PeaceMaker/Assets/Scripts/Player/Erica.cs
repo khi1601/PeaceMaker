@@ -38,35 +38,17 @@ public class Erica : Player
         UpAnim.SetBool("isAttack", false);
         DownAnim.SetBool("isAttack", true);
     }
-    void LaunchMissile()
-    {
-        //GameObject bulletobj = Instantiate(bullet, bulletPos.position, Quaternion.identity);
-        if (transform.localScale.x == -1)
-        {
-            //bulletobj.GetComponent<PenguinMissile>().Direction = -1;
-            //bullet.transform.eulerAngles = new Vector3(0, 180f, 0);
-        }
-        else
-        {
-            //bulletobj.GetComponent<PenguinMissile>().Direction = 1;
-            //bullet.transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-    }
-    void PlayerWalk1Sound()
-    {
-        SoundBox.instance.PlaySFX("PlayerWalk1");
-    }
-    void PlayerWalk2Sound()
-    {
-        SoundBox.instance.PlaySFX("PlayerWalk2");
-    }
-    void PlayerShootSound()
-    {
-        SoundBox.instance.PlaySFX("Shoot");
-    }
+   
     public override void TakeDamage(float damage)
     {
-        
+        if(!isDamaged)
+        {
+            isDamaged = true;
+
+
+            //구현하기
+            Invoke("isDamagedFalse", 0.7f);
+        }
     }
 }
 

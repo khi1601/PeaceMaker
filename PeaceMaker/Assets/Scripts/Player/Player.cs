@@ -36,6 +36,9 @@ public abstract class Player : MonoBehaviour
     public bool isAttack;
     protected bool isSit;
     public Vector3 flipMove;
+
+    protected bool isDamaged;
+    protected bool isInvincible;
     // Start is called before the first frame update
     protected void Start()
     {
@@ -128,5 +131,9 @@ public abstract class Player : MonoBehaviour
         }
     }
     public abstract void TakeDamage(float damage);
+    protected void isDamagedFalse()
+    {
+        isDamaged = false;
+    }
 }
 
